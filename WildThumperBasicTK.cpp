@@ -1,6 +1,6 @@
 /*
 	File Name  = WildThumperBasicTK.cpp
-	Programmer = Than Kywe
+	Programmer = Than Kywe [Yonathan Phoenix]
 	Date 	   = 07/16/2013
 */
 #include "..\Servo.h"
@@ -45,6 +45,7 @@ WildThumperBasicTK::WildThumperBasicTK(int charger){
 void WildThumperBasicTK::RCMode(){
 void RCmode()
 {
+  //This part is from the WildThumper sample	
   //------------------------- Code for Radio Controlled inputs ---------------------------------------------------------
 
   Speed=pulseIn(RCleft,HIGH,25000);             // read throttle/left stick
@@ -83,6 +84,7 @@ void RCmode()
 }
 
 void WildThumperBasicTK::SerialMode(){
+  //This pat is modified by Than Kywe[Yonathan Phoenix]. 
 
   if (Serial.available()>1)            // command available
   {
